@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "5.0.0"
+before_script:
+    - npm install -g gulp
+    - npm install bower -g
+script:
+    - bower install
+    - gulp
+cache:
+    directories:
+        - bower_components
+        - node_modules
+notifications:
+    email:
+        - rousselguillaume@hotmail.fr
