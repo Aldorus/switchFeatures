@@ -33,7 +33,7 @@ You can also hide some part of your application with the 'sf' directive (useful 
 ```js
     angular.module('my_application').config(switchFeaturesConfigProvider) {
         switchFeaturesConfigProvider.setFeatures({
-            'menu': false
+            'menu': true
         });
     }
 ```
