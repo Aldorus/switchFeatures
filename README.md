@@ -1,5 +1,7 @@
 switchFeatures module
 ================
+[![Build Status](https://travis-ci.org/Aldorus/switchFeatures.svg)](https://travis-ci.org/Aldorus/switchFeatures)
+
 
 With this module you can intercept http call and replace the call with a json response (very useful when your webservice isn't ready)
 You can also hide some part of your application with the 'sf' directive (useful when your module isn't already ready for the production)
