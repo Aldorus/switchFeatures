@@ -1,0 +1,9 @@
+{
+    "name": "switch-features",
+    "version": "1.0.0",
+    "main": "./dist/switch-feature.js",
+    "devDependencies": {
+        "angular": "~1.4.x",
+        "angular-mocks": "~1.4.8"
+    }
+}
