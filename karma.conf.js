@@ -16,7 +16,13 @@ module.exports = function (config) {
         singleRun: true,
         autoWatch: false,
         frameworks: ['jasmine'],
-        files: files
+        files: files,
+        preprocessors: {
+            // source files, that you wanna generate coverage for
+            // do not include tests or libraries
+            // (these files will be instrumented by Istanbul)
+            'src/**/*.js': ['coverage']
+        }
     };
     config.set(configuration);
 };

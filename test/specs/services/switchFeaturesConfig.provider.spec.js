@@ -9,6 +9,23 @@
             switchFeaturesConfig = _switchFeaturesConfig_;
         }));
 
+        it('should merge the configuration', function () {
+            switchFeaturesConfig.setConfig({
+                basePathMock: '/configTests/',
+                mocks: {
+                    'foo' : 'bar'
+                }
+            });
+
+            expect(switchFeaturesConfig.config).toEqual({
+                basePathMock: '/configTests/',
+                mocks: {
+                    'foo' : 'bar'
+                },
+                features: {}
+            });
+        });
+
         it('should change the basePath', function () {
             expect(switchFeaturesConfig.config.basePathMock).toEqual('/mocks/');
             switchFeaturesConfig.setBasePathMock('/mocksTest/');

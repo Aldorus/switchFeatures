@@ -34,7 +34,7 @@
              * @param config
              */
             self.setConfig = function setConfig(config) {
-                angular.extend(self.config.config, config);
+                angular.extend(self.config, config);
             };
 
             /**

@@ -37,5 +37,9 @@ gulp.task('build', ['lint', 'test'], function () {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('version', function() {
+
+});
+
 // Default
-gulp.task('default', ['build']);
+gulp.task('default', ['build', 'version']);
