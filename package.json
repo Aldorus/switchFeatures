@@ -1,18 +1,24 @@
 {
-  "name": "switchFeatures",
-  "version": "1.0.0",
-  "devDependencies": {
-    "eslint-plugin-angular": "^0.15.0",
-    "gulp": "~3.9.0",
-    "gulp-angular-filesort": "^1.1.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-eslint": "^1.1.1",
-    "gulp-uglify": "^1.5.1",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.18",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.3",
-    "phantomjs": "^1.9.19",
-    "wiredep": "^3.0.0"
-  }
+    "name": "switchFeatures",
+    "version": "1.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aldorus/switchFeatures.git"
+    },
+    "devDependencies": {
+        "eslint-plugin-angular": "^0.15.0",
+        "gulp": "~3.9.0",
+        "gulp-angular-filesort": "^1.1.1",
+        "gulp-concat": "^2.6.0",
+        "gulp-eslint": "^1.1.1",
+        "gulp-uglify": "^1.5.1",
+        "jasmine-core": "^2.4.1",
+        "karma": "^0.13.18",
+        "karma-coverage": "^0.5.3",
+        "karma-jasmine": "^0.3.6",
+        "karma-phantomjs-launcher": "^0.2.3",
+        "phantomjs": "^1.9.19",
+        "wiredep": "^3.0.0"
+    }
 }

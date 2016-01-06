@@ -11,7 +11,7 @@
             function rewriteConfig(config) {
                 // Check in config
                 var match = Object.keys(switchFeaturesConfig.config.mocks).filter(function (element) {
-                    if (config.url.indexOf(element) > 0) {
+                    if (config.url.indexOf(element) >= 0) {
                         return true;
                     }
                     return false;
