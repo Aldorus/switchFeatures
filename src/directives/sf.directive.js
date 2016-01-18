@@ -12,7 +12,7 @@
             scope: true,
             link: function sfLink(scope, element, attrs) {
                 var vm = this;
-                if (switchFeaturesConfig.config.features[attrs.sf] === true) {
+                if (switchFeaturesConfig.config.features[attrs.sf] === false) {
                     attrs.$set('ng-if', false);
                     $compile(element)(scope);
                 }

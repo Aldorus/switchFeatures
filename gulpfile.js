@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     angularFilesort = require('gulp-angular-filesort'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    ngAnnotate = require('gulp-ng-annotate'),
     Server = require('karma').Server;
 
 
@@ -29,6 +30,7 @@ gulp.task('build', ['lint', 'test'], function () {
     return gulp.src('src/**/*.js')
         .pipe(angularFilesort())
         .pipe(concat('switch-feature.js'))
+        .pipe(ngAnnotate())
         .pipe(gulp.dest('dist'))
         .pipe(uglify({
             mangle: false

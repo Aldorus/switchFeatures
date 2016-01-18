@@ -63,7 +63,7 @@ Be careful the declaration order is important, default is always at the end
 ```js
     angular.module('my_application').config(switchFeaturesConfigProvider) {
         switchFeaturesConfigProvider.setFeatures({
-            'menu': true
+            'menu': false
         });
     }
 ```

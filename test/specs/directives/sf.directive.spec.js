@@ -22,7 +22,7 @@
 
         it('shouldn\'t change anything to the div', function () {
             config.config.features = {
-                'result': false
+                'result': true
             };
             $compile(elm)(scope);
             scope.$digest();
@@ -31,7 +31,7 @@
 
         it('should hide the div', function () {
             config.config.features = {
-                'result': true
+                'result': false
             };
             $compile(elm)(scope);
             scope.$digest();

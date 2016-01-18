@@ -1,6 +1,6 @@
 {
     "name": "switch-features",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "./dist/switch-feature.js",
     "ignore": [],
     "devDependencies": {
