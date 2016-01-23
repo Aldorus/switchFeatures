@@ -1,10 +1,11 @@
 (function () {
-    
+
     'use strict';
     angular.module('switchFeatures', [])
-        .config(function ($httpProvider) {
+        .config(["$httpProvider", function ($httpProvider) {
+            'use strict';
             $httpProvider.interceptors.push('mockInterceptor');
-        });
+        }]);
 
 })();
 
@@ -71,7 +72,7 @@
     'use strict';
 
     angular.module('switchFeatures')
-        .factory('mockInterceptor', function (switchFeaturesConfig) {
+        .factory('mockInterceptor', ["switchFeaturesConfig", function (switchFeaturesConfig) {
 
             /**
              * Rewrite the config according to the provider configuration
@@ -101,13 +102,14 @@
                     return rewriteConfig(config);
                 }
             };
-        });
+        }]);
 })();
 
 (function () {
 
     'use strict';
 
+    sf.$inject = ["switchFeaturesConfig", "$compile"];
     angular.module('switchFeatures')
         .directive('sf', sf);
 
@@ -118,7 +120,7 @@
             scope: true,
             link: function sfLink(scope, element, attrs) {
                 var vm = this;
-                if (switchFeaturesConfig.config.features[attrs.sf] === true) {
+                if (switchFeaturesConfig.config.features[attrs.sf] === false) {
                     attrs.$set('ng-if', false);
                     $compile(element)(scope);
                 }
